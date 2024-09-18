@@ -235,19 +235,90 @@ footer .container {
     padding-right: 20px;
   }
 
+  #hero h1 {
+    font-size: 5em;
+  }
+
   #somos-gaming .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos-gaming .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #somos-gaming h2 {
+    margin-top: 0px;
   }
 
   #somos-gaming .img-container {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("imagenes/norte.jpg");
+    background-image: url("imagenes/norte.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
     width: 400px;
+  }
+
+  #nuestros-juegos .programas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestros-juegos p {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #nuestros-juegos h2 {
+    font-size: 4em;
+  }
+
+  #nuestros-juegos h3 {
+    margin-top: 0;
+  }
+
+  #nuestros-juegos .carta {
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #reglasDelEvento {
+    background-image: url("imagenes/torneo.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 800px) 120px;
+  }
+
+  #reglasDelEvento .container {
+    text-align: initial;
+  }
+
+  #reglasDelEvento ul {
+    margin-left: 100px;
+  }
+
+  #final h2 {
+    font-size: 5em;
+  }
+
+  #final button {
+    font-size: 2em;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (win-width: 1100px) {
+  #reglasDelEvento {
+    background-position-x: calc(100vw - 800px);
   }
 }
