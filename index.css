@@ -54,7 +54,7 @@ button:hover {
 }
 
 .color-acento {
-  color: greenyellow;
+  color: red;
 }
 
 header {
@@ -259,11 +259,12 @@ footer .container {
   }
 
   #somos-gaming .img-container {
-    background-image: url("imagenes/norte.jpg");
+    background-image: url("imagenes/th.png");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     height: 500px;
-    width: 400px;
+    width: 500px;
   }
 
   #nuestros-juegos .programas {
