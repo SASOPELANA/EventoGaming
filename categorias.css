@@ -14,26 +14,28 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em; /* Ajustar tamaño del texto para pantallas más pequeñas */
 }
 h2 {
-  font-size: 2.7em;
+  font-size: 2em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.5em; /* Ajustar tamaño del texto */
 }
 p,
 li {
-  font-size: 1.25em;
+  font-size: 1em; /* Ajustar tamaño del texto */
 }
 
 ul {
   list-style: none;
+  padding: 0; /* Eliminar padding extra */
 }
 
 .container {
-  max-width: 1400px;
-  margin: auto;
+  max-width: 100%; /* Ajustar el ancho del contenedor para pantallas pequeñas */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 0 15px; /* Añadir algo de padding lateral */
 }
 
 header {
@@ -43,8 +45,8 @@ header {
 
 header .logo {
   margin: 0;
-  padding: 25px 30px;
-  font-size: 1.6em;
+  padding: 15px 20px; /* Ajustar padding */
+  font-size: 1.4em;
 }
 
 header .container {
@@ -57,11 +59,11 @@ header nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 15px; /* Ajustar padding */
 }
 
 header h3 {
-  padding: 5px 12px;
+  padding: 5px 10px; /* Ajustar padding */
   text-decoration: none;
   font-weight: bold;
   color: rgb(32, 29, 29);
@@ -69,7 +71,7 @@ header h3 {
 
 main {
   margin: 20px auto;
-  width: 80%;
+  width: 100%; /* Ajustar el ancho del main */
 }
 
 #videoInca .iframe-container {
@@ -88,7 +90,199 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
+  border: 1px solid black;
+}
+
+.imagen_inca_2024 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("imagenes/Inca_cup2024.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+#nuestrosJuegos {
+  background-color: #212f3c;
+  padding: 20px 0;
+}
+
+#nuestrosJuegos h2 {
+  font-size: 2em; /* Ajustar tamaño del texto */
+  color: rgb(213, 211, 207);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#nuestrosJuegos ul {
+  list-style: none;
+  padding: 0; /* Eliminar padding extra */
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para centrado vertical */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+#nuestrosJuegos li {
+  font-size: 1em; /* Ajustar tamaño del texto */
+  background-color: crimson;
+  color: rgb(240, 243, 244);
+  margin: 10px 0; /* Ajustar márgenes verticales */
+  padding: 10px 15px; /* Ajustar padding */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgb(240, 243, 244);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 90%; /* Ajustar ancho */
+  max-width: 500px; /* Establecer un ancho máximo */
+  text-align: center;
+}
+
+#nuestrosJuegos li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgb(240, 243, 244);
+}
+
+/* Sección Juegos FREE */
+#juegosFree {
+  background-color: #1b2631;
+  padding: 20px 0;
+}
+
+#juegosFree h2 {
+  font-size: 2em; /* Ajustar tamaño del texto */
+  color: rgb(213, 211, 207);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#juegosFree ul {
+  list-style: none;
+  padding: 0; /* Eliminar padding extra */
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para centrado vertical */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+#juegosFree li {
+  font-size: 1em; /* Ajustar tamaño del texto */
+  background-color: #2980b9;
+  color: rgb(240, 243, 244);
+  margin: 10px 0; /* Ajustar márgenes verticales */
+  padding: 10px 15px; /* Ajustar padding */
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgb(240, 243, 244);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 90%; /* Ajustar ancho */
+  max-width: 500px; /* Establecer un ancho máximo */
+  text-align: center;
+}
+
+#juegosFree li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgb(240, 243, 244);
+}
+
+/* PUCLICIDAD */
+
+/* Estilo para la sección de información */
+#informacion {
+  background-color: #d5d8dc; /* Fondo claro para mejor contraste */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para el contenedor de información */
+#informacion .info-container {
+  max-width: 800px; /* Ajustar el ancho máximo para pantallas grandes */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 20px; /* Padding para evitar que el contenido esté pegado a los bordes */
+  background-color: #fff; /* Fondo blanco para el contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos generales para la sección de información */
+#informacion p {
+  font-size: 1em; /* Tamaño de fuente para párrafos */
+  line-height: 1.6; /* Espacio entre líneas para mejorar la legibilidad */
+  margin: 10px 0; /* Espacio entre párrafos */
+}
+
+#informacion a {
+  color: #2980b9; /* Color del enlace */
+  text-decoration: none; /* Eliminar subrayado */
+}
+
+#informacion a:hover {
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+#informacion h3 {
+  font-size: 1.5em; /* Tamaño de fuente para subtítulos */
+  margin: 20px 0 10px; /* Espacio arriba y abajo del título */
+  color: crimson;
+}
+#informacion h4 {
+  font-size: 1.7em; /* Tamaño de fuente para subtítulos */
+  margin: 20px 0 10px; /* Espacio arriba y abajo del título */
+  color: #00b7eb;
+  text-decoration: underline;
+}
+
+/* Estilo para la lista de precios */
+#informacion .precio ul {
+  list-style: none; /* Eliminar puntos de la lista */
+  padding: 0; /* Eliminar padding */
+  margin: 20px 0; /* Espacio arriba y abajo de la lista */
+}
+
+#informacion .precio li {
+  font-size: 1em; /* Tamaño de fuente para elementos de lista */
+  margin: 10px 0; /* Espacio entre elementos de lista */
+}
+
+/* Estilo para la lista de actividades destacadas */
+.actividades-destacadas {
+  list-style: none; /* Eliminar puntos de la lista */
+  padding: 0; /* Eliminar padding */
+  margin: 15px 0; /* Espacio arriba y abajo de la lista */
+}
+
+.actividades-destacadas li {
+  font-size: 1.2em; /* Tamaño de fuente para elementos de lista */
+  margin: 10px 0; /* Espacio entre elementos de lista */
+  padding: 10px 15px; /* Espacio interno en las cajas */
+  background-color: #4a646c; /* Fondo blanco para las cajas */
+  color: #fffafa;
+  border: 1px solid #ddd; /* Borde ligero */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgb(0, 0, 54); /* Sombra ligera */
+  width: 100%; /* Ancho completo del contenedor */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+  text-align: center; /* Centrar el texto dentro de la caja */
+}
+
+.imagen2_inca_2024 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("imagenes/artistas2024.png"); /* Ajustar la ruta de la imagen según corresponda */
+  background-size: cover; /* Asegurarse de que la imagen cubra el área */
+  background-position: center; /* Centrar la imagen */
+  width: 100%; /* Ancho completo del contenedor */
+  height: 300px; /* Altura fija */
+  margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+  border: 2px solid black; /* Bordes ligeros */
 }
 
 .imagen_inca_2024 {
@@ -97,4 +291,848 @@ main {
   background-position: center;
   width: 100%;
   height: 300px;
+  border: 1px solid black;
+}
+
+/* HOTELES Y OSPEDAJES */
+
+#hoteles {
+  padding: 10px;
+  background-color: #1a1110;
+}
+
+.hotel-container,
+.hotel-info {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.hotel-container hr,
+.hotel-info hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 0;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* REDES SOCIALES */
+
+/* Estilos generales para la sección de redes sociales */
+
+#redesSociales {
+  background-color: #f0f0f0;
+  background-image: url("imagenes/arcade3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+#redesSociales .redesContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#redesSociales h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #eaecee;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#redesSociales ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#redesSociales ul > li {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Fondo blanco con 60% de opacidad */
+  backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+  border-radius: 0.5em;
+  padding: 0.3em 06em;
+  margin-bottom: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#redesSociales ul > li img {
+  margin-right: 0.6em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#redesSociales ul > li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  display: flex; /* Flexbox para alinear el icono y el texto */
+  align-items: center; /* Centra verticalmente el icono y el texto dentro del enlace */
+  font-weight: bold;
+  margin-top: 0.3em; /* Ajusta el margen superior del texto para moverlo hacia arriba */
+}
+
+/* Administarcion */
+
+#Administracion {
+  background-color: #f0f0f0;
+  background-image: url("imagenes/norte.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+#Administracion .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#Administracion h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #f8f8ff;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Administracion h2::before {
+  content: "";
+  position: absolute;
+  #hoteles {
+    padding: 40px;
+    background-color: #1a1110;
+  }
+
+  .hotel-container,
+  .hotel-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hotel-container hr,
+  .hotel-info hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+
+  p {
+    font-size: 1em;
+    color: #666;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo oscuro con opacidad para mejor legibilidad */
+  z-index: -1; /* Asegura que el fondo esté detrás del texto */
+}
+
+#Administracion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Administracion ul > li {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#Administracion ul > li img {
+  margin-right: 0.6em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#Administracion ul > li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 0.3em;
+}
+
+/* IFRAME LOCALIZACION */
+
+#localizacion {
+  background-color: #f5f5f5;
+  padding: 1em;
+}
+
+#localizacion .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+#localizacion h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: black;
+  position: relative;
+}
+
+#localizacion h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  height: 450px;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+}
+
+/* pie de pagina */
+footer {
+  background-color: gainsboro;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Estilos para pantallas grandes (escritorios y portátiles) */
+@media (min-width: 720px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  header {
+    background-color: rgb(240, 240, 240);
+    color: crimson;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    justify-content: space-between;
+  }
+
+  header .logo {
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.4em;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los elementos de navegación */
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  header h1,
+  header h3 {
+    margin: 0;
+    line-height: 1; /* Alineación vertical uniforme */
+  }
+
+  header h1 {
+    font-size: 2em; /* Tamaño de fuente de h1 */
+  }
+
+  header h3 {
+    font-size: 1.2em; /* Tamaño de fuente de h3 */
+    font-weight: bold;
+    color: rgb(32, 29, 29);
+  }
+
+  main {
+    margin: 20px auto;
+    width: 100%;
+  }
+
+  #videoInca .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    margin-bottom: 1em;
+  }
+
+  #videoInca .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+  }
+
+  /* imagen*/
+  .seccion-contenedor {
+    background-image: url("imagenes/asus.jpg"); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    filter: brightness(0.9);
+    padding: 20px; /* Espacio alrededor */
+    width: 100%;
+    height: 700;
+  }
+
+  .imagen_inca_2024 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("imagenes/Inca_cup2024.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 60%; /* Ajusta según sea necesario */
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+  }
+
+  /*Lista de juegos destok*/
+
+  #nuestrosJuegos {
+    background-color: #212f3c;
+    padding: 40px 0;
+  }
+
+  #nuestrosJuegos h2 {
+    font-size: 2.5em;
+    color: rgb(213, 211, 207);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #nuestrosJuegos ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #nuestrosJuegos li {
+    font-size: 1.2em;
+    background-color: crimson;
+    color: rgb(240, 243, 244);
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgb(240, 243, 244);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+  }
+
+  #nuestrosJuegos li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgb(240, 243, 244);
+  }
+
+  /* Sección Juegos FREE */
+  #juegosFree {
+    background-color: #1b2631; /* Mantenemos el color de fondo especificado */
+    padding: 40px 0;
+  }
+
+  #juegosFree h2 {
+    font-size: 2.5em;
+    color: rgb(213, 211, 207);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #juegosFree ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #juegosFree li {
+    font-size: 1.2em;
+    background-color: #2980b9; /* Color de fondo específico para esta sección */
+    color: rgb(240, 243, 244);
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    box-shadow: 0 6px 8px rgb(240, 243, 244);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+  }
+
+  #juegosFree li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgb(240, 243, 244);
+  }
+
+  /* seccion información */
+
+  /* Estilo para la sección de información */
+
+  #informacion {
+    background-color: #080808;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Estilo para el contenedor de información */
+  #informacion .info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos generales para la sección de información */
+  #informacion p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+
+  #informacion a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+
+  #informacion a:hover {
+    text-decoration: underline;
+  }
+
+  #informacion h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: crimson;
+  }
+
+  #informacion h4 {
+    font-size: 1.7em;
+    margin: 20px 0 10px;
+    color: #00b7eb;
+    text-decoration: underline;
+  }
+
+  /* Estilo para la lista de precios */
+  #informacion .precio ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #informacion .precio li {
+    font-size: 1em;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #4a646c;
+    color: #fffafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 54);
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Estilo para la lista de actividades destacadas */
+  .actividades-destacadas {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .actividades-destacadas li {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #4a646c;
+    color: #fffafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 54);
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .imagen2_inca_2024 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("imagenes/artistas2024.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    border: 2px solid black;
+  }
+
+  /* hoteles */
+
+  #hoteles {
+    padding: 40px;
+    background-color: #1a1110;
+    text-align: center;
+  }
+
+  .hotel-container,
+  .hotel-info {
+    background-color: #e5e4e2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hotel-container hr,
+  .hotel-info hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 20px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  p {
+    font-size: 1em;
+    color: #666;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Redes y contactos */
+
+  #redesSociales {
+    background-color: #f0f0f0;
+    background-image: url("imagenes/arcade3.jpg");
+    background-size: cover; /* Mantiene la imagen de fondo en alta calidad */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+    width: 100%;
+    height: 800; /* Altura igual a la altura de la ventana del navegador */
+  }
+
+  #redesSociales .redesContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  #redesSociales h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #eaecee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  #redesSociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #redesSociales ul > li {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+    border-radius: 0.5em;
+    padding: 0.3em 0.6em;
+    margin-bottom: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #redesSociales ul > li img {
+    margin-right: 0.6em;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  #redesSociales ul > li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 0.3em;
+  }
+
+  #Administracion {
+    background-color: #f0f0f0;
+    background-image: url("imagenes/norte.jpg");
+    background-size: cover; /* Mantiene la imagen de fondo en alta calidad */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+    width: 100%;
+    height: auto; /* Ajusta la altura según el contenido */
+  }
+
+  #Administracion .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  #Administracion h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #f8f8ff;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  #Administracion h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+
+  #Administracion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #Administracion ul > li {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(120%) contrast(160%);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #Administracion ul > li img {
+    margin-right: 0.6em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  #Administracion ul > li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 0.3em;
+  }
+
+  /* pie de pagina */
+  footer {
+    background-color: gainsboro;
+    color: #333;
+    padding: 1em 0;
+    text-align: end;
+    position: relative;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
 }
