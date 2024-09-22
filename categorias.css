@@ -609,6 +609,10 @@ footer p {
   font-size: 0.9em;
 }
 
+
+/*--------------------------------------------------------------------------*/
+
+
 /* Estilos para pantallas grandes (escritorios y portátiles) */
 @media (min-width: 720px) {
   .container {
