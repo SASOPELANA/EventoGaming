@@ -104,7 +104,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("imagenes/varios.jpg");
+    url("imagenes/Evento_inca1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -116,7 +116,7 @@ header a:hover {
 
 #somos-gaming .container {
   text-align: center;
-  padding: 200px 12px;
+  padding: 80px 12px;
 }
 
 #nuestros-juegos {
@@ -218,6 +218,8 @@ footer .container {
   align-items: flex-end;
 }
 
+
+/* Version Destok*/
 @media (min-width: 720px) {
   header {
     position: fixed;
@@ -242,6 +244,7 @@ footer .container {
   #somos-gaming .container {
     display: flex;
     justify-content: space-evenly;
+    padding: 200px;
   }
 
   #somos-gaming .texto {

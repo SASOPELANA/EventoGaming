@@ -1,36 +1,51 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>INCA-CUP-2025</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="icon" href="iconos/ino.ico">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <p class="logo">Evento INCA CUP 2025</p>
-        <nav>
-          <a href="#somos-gaming">Torneo Gaming</a>
-          <a href="categorias.html">Categorias</a>
-          <a href="#reglasDelEvento">Reglas del Evento</a>
-        </nav>
-      </div>
-    </header>
-    <section id="hero">
-      <h1>
-        Veni y Participa <br />
-        INCA CUP 2025
-      </h1>
-      <button>CONTACTANOS YA!</button>
-    </section>
-    <section id="somos-gaming">
-      <div class="container">
-        <div class="img-container"></div>
 
-        <div class="texto">
-        <h2>Somos   <span class="color-acento"> INCA CUP 2025</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INCA-CUP-2025</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="time.css"> <!-- para cuenta regresiva -->
+  <link rel="icon" href="iconos/ino.ico">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <p class="logo">Evento INCA CUP 2025</p>
+      <nav>
+        <a href="#somos-gaming">Torneo Gaming</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="#reglasDelEvento">Reglas del Evento</a>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <h1>
+      Veni y Participa <br />
+      INCA CUP 2025
+    </h1>
+    <button>CONTACTANOS YA!</button>
+  </section>
+
+
+  <!-- time- cuenta regresiva-->
+
+  <div>
+    <h2 class="tituloTime">¡Prepárate parar el Evento!</h2>
+    <div id="cuenta"></div>
+  </div>
+
+  <!-- Fin time  -->
+
+
+  <section id="somos-gaming">
+    <div class="container">
+      <div class="img-container"></div>
+
+      <div class="texto">
+        <h2>Somos <span class="color-acento"> INCA CUP 2025</h2>
         <p>
           ¡Bienvenidos a INCA CUP 2025, el torneo gaming más esperado del año!
           Únete a jugadores de todo el mundo para competir en tus juegos
@@ -38,14 +53,14 @@
           necesario para ser el campeón.
         </p>
       </div>
-     </div>
+    </div>
 
-    </section>
-    <section id="nuestros-juegos">
-      <div class="container">
-        <h2>Nuestros Juegos</h2>
+  </section>
+  <section id="nuestros-juegos">
+    <div class="container">
+      <h2>Nuestros Juegos</h2>
 
-        <div class="programas">
+      <div class="programas">
         <div class="carta">
           <h3>Guilty Gear Strive</h3>
           <p>
@@ -82,33 +97,47 @@
           </p>
           <button>+Info</button>
         </div>
-        </div>
-
       </div>
-    </section>
 
-    <section id="reglasDelEvento">
-      <div class="container">
-        <ul>
-          <li>📍Respeto y Comportamiento</li>
-          <li>📍Equipamento y Configuracion</li>
-          <li>📍Sin Trampas</li>
-          <li>📍Horarios y Puntualidad</li>
-        </ul>
-      </div>
-    </section>
-    <section id="final">
-        <h2>Listo para jugar?</h2>
-      <a href="https://www.start.gg/tournament/inca-cup-2025/details" target="_blank">
-    <button> INSCRÍBETE YA!</button>
+    </div>
+  </section>
 
-      </a>
-    </section>
+  <section id="reglasDelEvento">
+    <div class="container">
+      <ul>
+        <li>📍Respeto y Comportamiento</li>
+        <li>📍Equipamento y Configuracion</li>
+        <li>📍Sin Trampas</li>
+        <li>📍Horarios y Puntualidad</li>
+      </ul>
+    </div>
+  </section>
+  <section id="final">
+    <h2>Listo para jugar?</h2>
+    <a href="https://www.start.gg/tournament/inca-cup-2025/details" target="_blank">
+      <button> INSCRÍBETE YA!</button>
 
-    <footer>
-      <div class="container">
-        <p>&copy; Inscríbete Ya!</p>
-      </div>
-    </footer>
-  </body>
+    </a>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Inscríbete Ya!</p>
+    </div>
+  </footer>
+
+
+  <!-- codigo js para time -->
+
+  <script src="JS/simplyCountdown.min.js">
+
+  </script>
+
+  <script src="JS/counTime.js">
+
+  </script>
+  <!-- Fin codigo time JS -->
+
+</body>
+
 </html>
