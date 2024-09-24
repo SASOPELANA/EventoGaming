@@ -1,0 +1,121 @@
+/*
+    Codigo de stylo para cuenta Regresiva
+
+    version --> movil
+ */
+
+#cuenta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0.5em 0; /*Ajuste para moviles */
+  flex-wrap: wrap;
+}
+
+.simply-section {
+  background-color: crimson;
+  width: 120px;
+  height: 120px;
+  margin: 0 15px 15px;
+  margin-bottom: 25px;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(16, 17, 17, 0.87);
+  font-size: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.simply-section:hover {
+  transform: scale(1.05);
+}
+
+.simply-amount {
+  display: block;
+  font-weight: bold;
+  font-size: 35px;
+  color: #bfc6cc;
+  line-height: 1;
+}
+
+.simply-word {
+  font-size: 20px;
+  font-weight: 150;
+  color: #0e0101;
+  margin-top: 5px;
+}
+
+.tituloTime {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 2em;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.5);
+}
+
+/* --------------------------------------- */
+
+/* --- Versión Desktop --- */
+@media (min-width: 720px) {
+  #cuenta {
+    background-color: #536878;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 7em 0;
+    flex-wrap: wrap;
+  }
+
+  .tituloTime {
+    font-size: 70px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.5);
+    padding: 1em 0;
+  }
+
+  .simply-section {
+    background-color: crimson;
+    width: 250px;
+    height: 250px;
+    margin: 0 25px;
+    margin-bottom: 40px;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(16, 17, 17, 0.87);
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .simply-section:hover {
+    transform: scale(1.05);
+  }
+
+  .simply-amount {
+    display: block;
+    font-weight: bold;
+    font-size: 60px;
+    color: #bfc6cc;
+    line-height: 1;
+  }
+
+  .simply-word {
+    font-size: 50px;
+    font-weight: 150;
+    color: #0e0101;
+    margin-top: 5px;
+  }
+}
+
+/* -----------------------------------------*/

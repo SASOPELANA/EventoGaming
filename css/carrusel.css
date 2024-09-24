@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(24, 23, 24);
+}
+
+/* ----------------- Version Destok --------------*/
+
+.seccion-carrusel {
+  padding: 20px 0;
+}
+
+.carruselImagenes {
+  width: 1280;
+  height: auto;
+  margin: 50px auto 0;
+}
+
+.carruselImagenes ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.carruselImagenes li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.texto2 {
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 250px;
+  color: black;
+}
+
+.texto2 h2 {
+  font-size: 45;
+  margin-bottom: 35px;
+}
+
+.carruselImagenes img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+/*   ----- verison moviles -------------*/
+
+@media (max-width: 720px) {
+  /*--- Version Movile Carrusel   --*/
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .carruselImagenes {
+    width: 100%;
+    height: 200px; /* Altura ajustada para móviles */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carruselImagenes ul {
+    display: flex;
+    padding: 0;
+    width: 500%; /* Total de imágenes, cada una ocupa 100% */
+    animation: slide 20s infinite alternate ease-in-out; /* Animación para el carrusel */
+  }
+
+  .carruselImagenes li {
+    width: 100%; /* Cada imagen ocupará todo el ancho del contenedor */
+    list-style: none;
+    position: relative;
+  }
+
+  .carruselImagenes img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Limita la altura máxima */
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+    border-radius: 8%;
+  }
+
+  .texto2 {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: #dfa5a5;
+    border-radius: 10px;
+  }
+
+  .texto2 h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .texto2 p {
+    display: none;
+  }
+
+  /* Animación para el carrusel */
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -400%;
+    }
+  }
+}
