@@ -94,6 +94,31 @@ header nav ul li a {
   display: block;
 }
 
+.opciones > a {
+  color: rgb(55, 248, 30);
+}
+
+.opciones .listas {
+  display: none;
+  border-radius: 3px;
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.opciones .listas li a {
+  color: rgb(66, 122, 241); /* Cambia el color de los enlaces en la lista */
+}
+
+.opciones .listas li a:hover {
+  color: rgb(241, 159, 66); /* Cambia el color de los enlaces en la lista */
+}
+
+
+
+.opciones:hover .listas {
+  display: block; /* Muestra la lista al pasar el mouse */
+}
+
+
 header nav ul a:hover {
   color: rgb(235, 7, 56);
 }
@@ -111,7 +136,7 @@ header nav ul a:hover {
   padding: 100px;
   text-align: center;
   color: rgb(240, 224, 224);
-  font-size: 45px;
+  font-size: 38px;
   text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
 }
 
@@ -267,6 +292,7 @@ footer .container {
     padding-right: 20px;
   }
 
+
 #hero {
   background-color: rgb(6, 88, 126);
   padding: 50px 0;
@@ -279,7 +305,7 @@ footer .container {
 #hero h1 {
   text-align: center;
   color: rgb(240, 224, 224);
-  font-size: 45px;
+  font-size: 48px;
   text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
 }
 
