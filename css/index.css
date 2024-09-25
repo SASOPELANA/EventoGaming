@@ -59,15 +59,16 @@ button:hover {
 }
 
 header {
-  background-color: rgb(240, 240, 240);
+  background-color: #2a394f;
 }
 
 header .logo {
   margin: 0;
   padding: 25px 30px;
-  color: rgb(98, 129, 212);
+  color: #15a4f9;
   font-size: 1.6em;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 header .container {
@@ -76,22 +77,25 @@ header .container {
   align-items: center;
 }
 
-header nav {
+header nav ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 25px;
+  padding: 0;
+  margin: 0;
 }
 
-header a {
-  padding: 5px 12px;
+header nav ul li a {
+  font-size: 16px;
+  padding: 10px;
   text-decoration: none;
   font-weight: bold;
-  color: rgb(32, 29, 29);
+  color: #ffffff;
+  display: block;
 }
 
-header a:hover {
-  color: skyblue;
+header nav ul a:hover {
+  color: rgb(235, 7, 56);
 }
 
 #hero {
@@ -99,12 +103,12 @@ header a:hover {
   padding: 50px 0;
 }
 
-
 #hero a{
   text-decoration: none;
 }
 
 #hero h1 {
+  padding: 100px;
   text-align: center;
   color: rgb(240, 224, 224);
   font-size: 45px;
@@ -253,7 +257,11 @@ footer .container {
     justify-content: space-between;
   }
 
-  header nav {
+  header nav ul li a{
+    font-size: 18px;
+  }
+
+  header nav ul {
     flex-direction: row;
     padding-bottom: 0;
     padding-right: 20px;
