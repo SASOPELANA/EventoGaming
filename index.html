@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>INCA-CUP-2025</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/time.css"> <!-- para cuenta regresiva -->
   <link rel="icon" href="./iconos/ino.ico">
@@ -13,26 +14,30 @@
 <body>
   <header>
     <div class="container">
-      <p class="logo">Evento INCA CUP 2025</p>
-      <nav>
-        <ul>
-            <li> <a href="#somos-gaming" rel="noopener noreferrer">Torneo Gaming</a></li>
-            <li>  <a href="/html/categorias.html" rel="noopener noreferrer">Categorias</a> </li>
-            <li> <a href="#reglasDelEvento">Reglas del Evento</a></li>
-            <li><a href="#">Archivos</a></li>
-            <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">Canal de Twich</a></li>
-            <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank">Discord</a></li>
-            <li class="opciones"> <a href="#">Otros </a>
-              <ul class="listas">
-                <li><a href="#">Sitio1</a></li>
-                <li><a href="#">Sitio2</a></li>
-                <li><a href="#">Sitio3</a></li>
-                <li><a href="#">Sitio4</a></li>
-              </ul>
-            </li>
-        </ul>
-      </nav>
+        <h1 class="logo">Evento INCA CUP 2025</h1>
+
+        <ul class="nav-destok">
+          <li><a href="#somos-gaming" rel="noopener noreferrer">Torneo Gaming</a></li>
+          <li><a href="./html/categorias.html" rel="noopener noreferrer">Categorías</a></li>
+          <li><a href="#reglasDelEvento">Reglas del Evento</a></li>
+          <li><a href="#">Archivos</a></li>
+          <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">Canal de Twitch</a></li>
+          <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank">Discord</a></li>
+      </ul>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></button>
+            <ul class="nav-list">
+                <li><a href="#somos-gaming" rel="noopener noreferrer">Torneo Gaming</a></li>
+                <li><a href="/html/categorias.html" rel="noopener noreferrer">Categorías</a></li>
+                <li><a href="#reglasDelEvento">Reglas del Evento</a></li>
+                <li><a href="#">Archivos</a></li>
+                <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">Canal de Twitch</a></li>
+                <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank">Discord</a></li>
+            </ul>
+        </nav>
     </div>
+
   </header>
 
   
@@ -54,7 +59,7 @@
 <section class="seccion-carrusel">
   <div>
 <iframe 
-      src="/html/carrusel.html" 
+      src="./html/carrusel.html" 
       width="100%" 
       height="1080px" 
       style="border:0;" 
@@ -144,10 +149,10 @@
   <section id="reglasDelEvento">
     <div class="container">
       <ul>
-        <li>📍Respeto y Comportamiento</li>
-        <li>📍Equipamento y Configuracion</li>
-        <li>📍Sin Trampas</li>
-        <li>📍Horarios y Puntualidad</li>
+        <li> <i class="bi bi-joystick"></i>  Respeto y Comportamiento</li>
+        <li> <i class="bi bi-joystick"></i> Equipamento y Configuracion</li>
+        <li> <i class="bi bi-joystick"></i>  Sin Trampas</li>
+        <li> <i class="bi bi-joystick"></i>  Horarios y Puntualidad</li>
       </ul>
     </div>
   </section>
@@ -168,14 +173,16 @@
 
   <!-- codigo js para time -->
 
-  <script src="/JS/simplyCountdown.min.js">
+  <script src="./JS/simplyCountdown.min.js">
 
   </script>
 
-  <script src="/JS/counTime.js">
+  <script src="./JS/counTime.js">
 
   </script>
   <!-- Fin codigo time JS -->
+
+  <script src="./JS/main.js"></script>
 
 </body>
 
