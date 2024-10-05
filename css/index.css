@@ -79,7 +79,7 @@ header .container {
   align-items: center; /* Asegura que los elementos están alineados verticalmente */
 }
 
-.nav-destok{
+.nav-destok {
   display: none;
 }
 
@@ -134,7 +134,8 @@ header .container {
   text-decoration: none;
 }
 
-.nav ,.nav-list li a:hover{
+.nav,
+.nav-list li a:hover {
   color: rgb(109, 255, 80);
 }
 
@@ -145,7 +146,7 @@ header .container {
   padding: 50px 0;
 }
 
-#hero a{
+#hero a {
   text-decoration: none;
 }
 
@@ -168,7 +169,7 @@ header .container {
   background-color: crimson;
   text-decoration: none; /* Elimina el subrayado */
   display: block; /* Hacer que el botón sea un bloque */
-  margin: 20px auto; 
+  margin: 20px auto;
   cursor: pointer;
 }
 
@@ -177,13 +178,13 @@ header .container {
   color: #333;
 }
 
-
 /* ------- somos gaming -------------*/
 #somos-gaming .container {
   text-align: center;
   padding: 80px 12px;
 }
 
+/*  ------ Nuestros Juegos ------ */
 #nuestros-juegos {
   background-color: rgb(30, 30, 30);
   color: rgb(245, 245, 245);
@@ -238,6 +239,88 @@ header .container {
     url("../imagenes/kofxv.jpg");
 }
 
+.carta:nth-child(4) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/6.jpg");
+}
+
+.carta:nth-child(5) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/gokuhdf.webp");
+}
+
+.carta:nth-child(6) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/Guilty-Gear-Xrd-Rev-2.webp");
+}
+
+.carta:nth-child(7) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/Guilty-Gear-XX-Accent-Core-Plus-R-Cover.webp");
+}
+
+.carta:nth-child(8) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/tekken8.webp");
+}
+
+.carta:nth-child(9) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/Kof_2002_k.webp");
+}
+
+.carta:nth-child(10) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/mk3um.webp");
+}
+
+.carta:nth-child(11) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/dnfduel.webp");
+}
+
+.carta:nth-child(12) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/granBlu.webp");
+}
+
+/* ---- Reglas del Evento ---- */
 #reglasDelEvento .container {
   text-align: center;
   padding: 200px 12px;
@@ -283,12 +366,10 @@ footer .container {
   align-items: flex-end;
 }
 
-
 /*  --------------------------------------------------------------------------------*/
 /* Version Destok*/
 @media (min-width: 720px) {
-
-  .nav-destok{
+  .nav-destok {
     display: flex;
     gap: 1rem;
   }
@@ -303,7 +384,7 @@ footer .container {
   .nav-destok a:hover {
     color: #15d7f9;
   }
-  
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -318,45 +399,42 @@ footer .container {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
 
+  /*Fin de headers */
+  #hero {
+    background-color: rgb(6, 88, 126);
+    padding: 50px 0;
+  }
 
+  #hero a {
+    text-decoration: none;
+  }
 
-/*Fin de headers */
-#hero {
-  background-color: rgb(6, 88, 126);
-  padding: 50px 0;
-}
+  #hero h1 {
+    text-align: center;
+    color: rgb(240, 224, 224);
+    font-size: 48px;
+    text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
+  }
 
-#hero a {
-  text-decoration: none;
-}
+  #hero button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px;
+    color: white;
+    background-color: crimson;
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; /* Hacer que el botón sea un bloque */
+    margin: 20px auto;
+    cursor: pointer;
+  }
 
-#hero h1 {
-  text-align: center;
-  color: rgb(240, 224, 224);
-  font-size: 48px;
-  text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
-}
-
-#hero button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px;
-  color: white;
-  background-color: crimson;
-  text-decoration: none; /* Elimina el subrayado */
-  display: block; /* Hacer que el botón sea un bloque */
-  margin: 20px auto; 
-  cursor: pointer;
-}
-
-#hero a button:hover {
-  background-color: skyblue;
-  color: #333;
-}
-
+  #hero a button:hover {
+    background-color: skyblue;
+    color: #333;
+  }
 
   /* -------------------------------------------*/
 
@@ -389,8 +467,21 @@ footer .container {
     width: 500px;
   }
 
+  /*  Nuestros Juegos  */
+
+  #nuestros-juegos .carta img {
+    width: 100%; /* Ancho fijo de 300px */
+    height: auto; /* Altura fija de 400px */
+    object-fit: cover; /* Mantener la proporción y recortar si es necesario */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 5px solid #31a127;
+  }
+
   #nuestros-juegos .programas {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
   }
 
@@ -408,10 +499,11 @@ footer .container {
   }
 
   #nuestros-juegos .carta {
-    padding: 50px;
+    padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
+  /*---- reglas del evento --------*/
   #reglasDelEvento {
     background-image: url("../imagenes/torneo.jpg");
     background-repeat: no-repeat;
