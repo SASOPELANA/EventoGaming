@@ -138,12 +138,17 @@ header .container {
 .nav-list li a:hover {
   color: rgb(109, 255, 80);
 }
-
 /* FIN HEADERS */
 
 #hero {
+  background-image: url("../imagenes/fondo-ryzer1.jpg");
   background-color: rgb(6, 88, 126);
   padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+
+  border: 3px solid #00a8db;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 #hero a {
@@ -153,7 +158,7 @@ header .container {
 #hero h1 {
   padding: 100px;
   text-align: center;
-  color: rgb(240, 224, 224);
+  color: #fff;
   font-size: 38px;
   text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
 }
@@ -412,7 +417,7 @@ footer .container {
   #hero h1 {
     text-align: center;
     color: rgb(240, 224, 224);
-    font-size: 48px;
+    font-size: 50px;
     text-shadow: 3px 3px 5px rgba(255, 0, 0, 1);
   }
 
