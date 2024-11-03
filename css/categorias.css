@@ -1,54 +1,28 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
 
 body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-}
-
-h1 {
-  font-size: 2.5em; /* Ajustar tamaño del texto para pantallas más pequeñas */
-}
-h2 {
-  font-size: 2em;
-}
-h3 {
-  font-size: 1.5em; /* Ajustar tamaño del texto */
-}
-p,
-li {
-  font-size: 1em; /* Ajustar tamaño del texto */
-}
-
-ul {
-  list-style: none;
-  padding: 0; /* Eliminar padding extra */
-}
-
-.container {
-  max-width: 100%; /* Ajustar el ancho del contenedor para pantallas pequeñas */
-  margin: 0 auto; /* Centrar el contenedor */
-  padding: 0 15px; /* Añadir algo de padding lateral */
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
 }
 
 header {
-  background-color: #f0ffff;
-  color: crimson;
-  box-shadow: 0 4px 6px #8a2be2;
+  background-color: #8a2be2;
+  color: rgb(223, 217, 235);
+  box-shadow: 0 4px 6px #0d011431;
 }
 
 header .logo {
   margin: 0;
   padding: 15px 20px; /* Ajustar padding */
-  font-size: 1.4em;
-  text-shadow: 1px 1px 5px rgba(28, 13, 2, 0.5);
+  font-size: 20px;
+  text-shadow: 1px 1px 5px rgba(14, 13, 12, 0.5);
 }
 
 header .container {
@@ -66,10 +40,9 @@ header nav {
 
 header h3 {
   padding: 5px 10px; /* Ajustar padding */
-  text-decoration: none;
   font-weight: bold;
-  color: rgb(32, 29, 29);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: rgb(10, 10, 10);
+  text-shadow: 1px 1px 5px rgba(187, 84, 201, 0.5);
 }
 
 main {
@@ -102,7 +75,7 @@ main {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/imagenes/Inca_cup2024.jpg");
+    url("../imagenes/Inca_cup2024.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -113,7 +86,7 @@ main {
 
 /* ----- Nuestros Juegos -----  */
 #nuestrosJuegos {
-  background-color: #212f3c;
+  background-color: #8a2be2;
   padding: 20px 0;
 }
 
@@ -168,7 +141,7 @@ main {
 
 /* ----------- Sección Juegos FREE ----------- */
 #juegosFree {
-  background-color: #1b2631;
+  background-color: #8a2be2;
   padding: 20px 0;
 }
 
@@ -235,37 +208,38 @@ main {
   max-width: 800px; /* Ajustar el ancho máximo para pantallas grandes */
   margin: 0 auto; /* Centrar el contenedor */
   padding: 20px; /* Padding para evitar que el contenido esté pegado a los bordes */
-  background-color: #fff; /* Fondo blanco para el contenedor */
+  background-color: #8a2be2; /* Fondo blanco para el contenedor */
   border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Estilos generales para la sección de información */
 #informacion p {
+  color: #ddd;
   font-size: 1em; /* Tamaño de fuente para párrafos */
   line-height: 1.6; /* Espacio entre líneas para mejorar la legibilidad */
   margin: 10px 0; /* Espacio entre párrafos */
 }
 
 #informacion a {
-  color: #2980b9; /* Color del enlace */
+  color: #16dceb; /* Color del enlace */
   text-decoration: none; /* Eliminar subrayado */
 }
 
 #informacion a:hover {
   text-decoration: underline; /* Subrayar al pasar el ratón */
+  color: crimson;
 }
 
 #informacion h3 {
   font-size: 1.5em; /* Tamaño de fuente para subtítulos */
   margin: 20px 0 10px; /* Espacio arriba y abajo del título */
-  color: crimson;
+  color: #ffffff;
 }
 #informacion h4 {
   font-size: 1.7em; /* Tamaño de fuente para subtítulos */
   margin: 20px 0 10px; /* Espacio arriba y abajo del título */
   color: #00b7eb;
-  text-decoration: underline;
 }
 
 /* Estilo para la lista de precios */
@@ -276,8 +250,17 @@ main {
 }
 
 #informacion .precio li {
+  background-color: #4a646c;
+  color: #fffafa;
+  border-radius: 8px;
+  border: 1px solid #ddd; 
+  box-shadow: 0 2px 4px rgb(0, 0, 54);
   font-size: 1em; /* Tamaño de fuente para elementos de lista */
   margin: 10px 0; /* Espacio entre elementos de lista */
+  width: 100%;
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 10px 15px;
 }
 
 /* Estilo para la lista de actividades destacadas */
@@ -307,22 +290,13 @@ main {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/imagenes/artistas2024.png"); /* Ajustar la ruta de la imagen según corresponda */
+    url("../imagenes/artistas2024.png"); /* Ajustar la ruta de la imagen según corresponda */
   background-size: cover; /* Asegurarse de que la imagen cubra el área */
   background-position: center; /* Centrar la imagen */
   width: 100%; /* Ancho completo del contenedor */
   height: 300px; /* Altura fija */
   margin: 20px 0; /* Espacio arriba y abajo de la imagen */
   border: 2px solid black; /* Bordes ligeros */
-}
-
-.imagen_inca_2024 {
-  background-image: url("/imagenes/Inca_cup2024.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 300px;
-  border: 1px solid black;
 }
 
 /* HOTELES Y OSPEDAJES */
@@ -348,9 +322,8 @@ main {
   margin: 10px 0;
 }
 
-h2 {
-  font-size: 1.6em;
-  color: #333;
+.hotel12{
+  list-style: none;
 }
 
 .hotel-container h3 a,
@@ -369,22 +342,10 @@ h2 {
   font-family: "Georgia", serif;
 }
 
-ul {
-  margin: 10px 0;
-  padding-left: 10px;
-  font-family: "Arial", sans-serif;
-}
-
-p {
-  font-size: 0.9em;
-  color: #666;
-  font-family: "Arial", sans-serif;
-}
-
 /* REDES SOCIALES */
 #redesSociales {
   background-color: #f0f0f0;
-  background-image: url("/imagenes/arcade3.jpg");
+  background-image: url("../imagenes/arcade3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -451,7 +412,7 @@ p {
 
 #Administracion {
   background-color: #f0f0f0;
-  background-image: url("/imagenes/norte.jpg");
+  background-image: url("../imagenes/norte.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -561,19 +522,15 @@ iframe {
 
 /* pie de pagina */
 footer {
-  background-color: gainsboro;
+  background-color: rgb(235, 206, 235);
   color: #fff;
   padding: 1em 0;
   text-align: center;
   position: relative;
 }
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 footer p {
+  color: #8a2be2;
   margin: 0;
   font-size: 0.9em;
 }
@@ -588,8 +545,9 @@ footer p {
   }
 
   header {
-    background-color: rgb(240, 240, 240);
-    color: crimson;
+    background-color: #8a2be2;
+    color: rgb(223, 217, 235);
+    box-shadow: 0 4px 6px #0d011431;
   }
 
   header .container {
@@ -613,20 +571,10 @@ footer p {
     padding-bottom: 15px;
   }
 
-  header h1,
   header h3 {
-    margin: 0;
-    line-height: 1; /* Alineación vertical uniforme */
-  }
-
-  header h1 {
-    font-size: 3em; /* Tamaño de fuente de h1 */
-  }
-
-  header h3 {
-    font-size: 1.2em; /* Tamaño de fuente de h3 */
-    font-weight: bold;
-    color: rgb(32, 29, 29);
+    padding: 5px 10px; /* Ajustar padding */
+    color: rgb(10, 10, 10);
+    text-shadow: 1px 1px 5px rgba(187, 84, 201, 0.5);
   }
 
   main {
@@ -655,7 +603,7 @@ footer p {
 
   /* imagen*/
   .seccion-contenedor {
-    background-image: url("/imagenes/4.jpg"); /* Ruta a tu imagen de fondo */
+    background-image: url("../imagenes/4.jpg"); /* Ruta a tu imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -671,7 +619,7 @@ footer p {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("/imagenes/Inca_cup2024.jpg");
+      url("../imagenes/Inca_cup2024.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -686,7 +634,7 @@ footer p {
   /*Lista de juegos destok*/
 
   #nuestrosJuegos {
-    background-color: #212f3c;
+    background-color: #8a2be2;
     padding: 40px 0;
   }
 
@@ -728,7 +676,7 @@ footer p {
 
   /* Sección Juegos FREE */
   #juegosFree {
-    background-color: #1b2631; /* Mantenemos el color de fondo especificado */
+    background-color: #8a2be2; /* Mantenemos el color de fondo especificado */
     padding: 40px 0;
   }
 
@@ -780,41 +728,42 @@ footer p {
   }
 
   #informacion .info-container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #8a2be2;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   /* Estilos generales para la sección de información */
   #informacion p {
-    font-size: 1em;
+    color: #ddd;
+    font-size: 20px;
     line-height: 1.6;
     margin: 10px 0;
   }
 
   #informacion a {
-    color: #2980b9;
+    color: #16dceb;
     text-decoration: none;
   }
 
   #informacion a:hover {
     text-decoration: underline;
+    color: crimson;
   }
 
   #informacion h3 {
     font-size: 1.5em;
     margin: 20px 0 10px;
-    color: crimson;
+    color: #ffffff;
   }
 
   #informacion h4 {
     font-size: 1.7em;
     margin: 20px 0 10px;
     color: #00b7eb;
-    text-decoration: underline;
   }
 
   /* Estilo para la lista de precios */
@@ -865,23 +814,16 @@ footer p {
     width: calc(33.33% - 20px);
     box-sizing: border-box;
     text-align: center;
+    gap: 10px;
   }
 
   .imagen2_inca_2024 {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("/imagenes/artistas2024.png");
-    background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 300px;
-    margin: 20px 0;
-    border: 2px solid black;
+    height: 100vh;
+    background-size: cover;
   }
 
+ 
   /* hoteles */
   #hoteles {
     padding: 40px;
@@ -897,13 +839,6 @@ footer p {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
-  }
-
-  .hotel-container hr,
-  .hotel-info hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
   }
 
   .hotel-container {
@@ -924,46 +859,13 @@ footer p {
     padding-top: 0.5px;
     background-position: 200px center;
     border: 2px solid #f6809f;
-  }
-
-  h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    color: #555;
-    margin-top: 0;
-  }
-
-  ul {
-    margin: 20px 0;
-    padding-left: 0;
-    list-style: none;
-  }
-
-  p {
-    font-size: 1em;
-    color: #666;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    
   }
 
   /* Redes y contactos */
   #redesSociales {
     background-color: #f0f0f0;
-    background-image: url("/imagenes/arcade3.jpg");
+    background-image: url("../imagenes/arcade3.jpg");
     background-size: cover; /* Mantiene la imagen de fondo en alta calidad */
     background-position: center;
     background-repeat: no-repeat;
@@ -1025,7 +927,7 @@ footer p {
 
   #Administracion {
     background-color: #f0f0f0;
-    background-image: url("/imagenes/norte.jpg");
+    background-image: url("../imagenes/norte.jpg");
     background-size: cover; /* Mantiene la imagen de fondo en alta calidad */
     background-position: center;
     background-repeat: no-repeat;
@@ -1099,30 +1001,16 @@ footer p {
 
   /* pie de pagina */
   footer {
-    background-color: gainsboro;
-    color: #333;
+    background-color: rgb(235, 206, 235);
     padding: 1em 0;
-    text-align: end;
+    text-align: center;
     position: relative;
   }
 
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-  }
-
   footer p {
+    color: #8a2be2;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 20px;
   }
 
-  footer a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
 }

@@ -44,11 +44,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: skyblue;
-  color: #333;
-}
-
 .container {
   max-width: 1400px;
   margin: auto;
@@ -61,7 +56,7 @@ button:hover {
 /*  ----- HEARDERS  -----   */
 
 header {
-  background-color: #2a394f;
+  background-color:  #961aa7;
 }
 
 header .logo {
@@ -108,14 +103,15 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 1rem;
+  gap: 2rem;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(12, 12, 12, 0.973);
-  padding: 2rem;
+  padding: 10px;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Asegura que esté en la capa superior */
 }
 
 .nav.visible {
@@ -153,14 +149,15 @@ header .container {
 
 #hero a {
   text-decoration: none;
-}
+} 
 
 #hero h1 {
   padding: 100px;
+  justify-content: center;
   text-align: center;
   color: #fff;
-  font-size: 38px;
-  text-shadow: 3px 3px 5px rgba(153, 50, 204, 1);
+  font-size: 35px;
+  text-shadow: 3px 3px 5px rgba(153, 50, 204, 0.5);
 }
 
 #hero button {
@@ -191,7 +188,7 @@ header .container {
 
 /*  ------ Nuestros Juegos ------ */
 #nuestros-juegos {
-  background-color: rgb(30, 30, 30);
+  background-color: #52098dd7;
   color: rgb(245, 245, 245);
   text-align: center;
 }
@@ -325,6 +322,14 @@ header .container {
     url("../imagenes/granBlu.webp");
 }
 
+.cartas-button:hover{
+  background-color: rgba(225, 217, 230, 0.877);
+  color: #b61f5e;
+  cursor: pointer;
+}
+
+
+
 /* ---- Reglas del Evento ---- */
 #reglasDelEvento .container {
   text-align: center;
@@ -341,7 +346,7 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(30, 30, 30);
+  background-color: #52098dd7;
   color: white;
   height: 80vh;
 }
@@ -354,6 +359,12 @@ header .container {
   font-size: 1.75em;
 }
 
+#final button:hover {
+  background-color: #31a127;
+  color: #e4d7e6;
+  cursor: pointer;
+}
+
 footer {
   background-color: rgb(245, 245, 245);
 }
@@ -361,14 +372,32 @@ footer {
 footer p {
   margin: 0;
   padding: 12px;
-  color: rgb(100, 100, 100);
+  color: #961aa7;
 }
 
 footer .container {
-  height: 150px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.footer-listas{
+  margin: 2px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: #333;
+}
+
+.redes:hover {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(153, 50, 204, 0.5);
 }
 
 /*  --------------------------------------------------------------------------------*/
@@ -403,6 +432,8 @@ footer .container {
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
+
+  
 
   /*Fin de headers */
   #hero {
@@ -449,6 +480,8 @@ footer .container {
     padding: 200px;
   }
 
+  
+
   #somos-gaming .texto {
     width: 50%;
     max-width: 600px;
@@ -475,8 +508,8 @@ footer .container {
   /*  Nuestros Juegos  */
 
   #nuestros-juegos .carta img {
-    width: 100%; /* Ancho fijo de 300px */
-    height: auto; /* Altura fija de 400px */
+    width: 300px; /* Ancho fijo de 300px */
+    height: 500pxx; /* Altura fija de 400px */
     object-fit: cover; /* Mantener la proporción y recortar si es necesario */
     border-radius: 8px;
     margin-bottom: 15px;
@@ -485,14 +518,13 @@ footer .container {
 
   #nuestros-juegos .programas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
   }
 
   #nuestros-juegos p {
-    display: block;
-    margin-bottom: 30px;
+    display: none;
   }
 
   #nuestros-juegos h2 {
@@ -504,8 +536,15 @@ footer .container {
   }
 
   #nuestros-juegos .carta {
-    padding: 20px;
+    width: 500px;
+    padding: 80px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .cartas-button:hover{
+    background-color: rgba(225, 217, 230, 0.877);
+    color: #b61f5e;
+    cursor: pointer;
   }
 
   /*---- reglas del evento --------*/
@@ -532,8 +571,14 @@ footer .container {
     font-size: 2em;
   }
 
+  #final button:hover {
+    background-color: #31a127;
+    color: #e4d7e6;
+    cursor: pointer;
+  }
+
   footer .container {
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 

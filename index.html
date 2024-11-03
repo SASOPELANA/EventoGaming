@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>INCA-CUP-2025</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/time.css"> <!-- para cuenta regresiva -->
   <link rel="icon" href="./iconos/ino.ico">
@@ -24,22 +28,68 @@
           <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">Canal de Twitch</a></li>
           <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank">Discord</a></li>
       </ul>
+      
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle"></i></button>
             <ul class="nav-list">
-                <li><a href="#somos-gaming" rel="noopener noreferrer">Torneo Gaming</a></li>
-                <li><a href="/html/categorias.html" rel="noopener noreferrer">Categorías</a></li>
-                <li><a href="./html/reglas.html">Reglas del Evento</a></li>
-                <li><a href="#">Archivos</a></li>
-                <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">Canal de Twitch</a></li>
-                <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank">Discord</a></li>
+                <li><a href="#somos-gaming" rel="noopener noreferrer"> <i class="bi bi-controller"></i> Torneo Gaming</a></li>
+                <li><a href="/html/categorias.html" rel="noopener noreferrer"> <i class="bi bi-bookmark-heart-fill"></i> Categorías</a></li>
+                <li><a href="./html/reglas.html"> <i class="bi bi-joystick"></i> Reglas del Evento</a></li>
+                <li><a href="#"> <i class="bi bi-archive"></i> Archivos</a></li>
+                <li><a href="https://www.twitch.tv/norte_esports1" rel="noopener noreferrer" target="_blank">  <i class="bi bi-twitch"></i>Canal de Twitch</a></li>
+                <li><a href="https://discord.com/invite/Nv6tkbvwjd" rel="noopener noreferrer" target="_blank"> <i class="bi bi-discord"></i> Discord</a></li>
             </ul>
         </nav>
     </div>
 
+
+    
+    <!-- Carrusel de Imagenes -->
+
+    <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/eve2.png" class="d-block w-100" alt="eve 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/1.jpg" class="d-block w-100" alt="eve 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/3.jpg" class="d-block w-100" alt="eve 3">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/mortal1.jpg" class="d-block w-100" alt="eve 4">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/4.jpg" class="d-block w-100" alt="eve 5">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+<!-- Fin del carrusel -->
+
+
   </header>
 
+
+  
    
   <!-- Titutlo veni y participo -->
   <section id="hero">
@@ -52,24 +102,6 @@
       <button>CONTACTANOS YA!</button>
     </a> 
   </section>
-
-
-<!-- Carrusel de Imagenes -->
-
-<section class="seccion-carrusel">
-  <div>
-<iframe 
-      src="./html/carrusel.html" 
-      width="100%" 
-      height="1080px" 
-      style="border:0;" 
-      allowfullscreen 
-      loading="lazy">
-  </iframe>
-  </div>
-    </section>
-
-<!-- Fin del carrusel -->
  
   <!-- time- cuenta regresiva-->
 
@@ -114,7 +146,7 @@
             su multijugador en línea con rollback netcode, que asegura partidas
             fluidas y competitivas.
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
         </div>
 
         <div class="carta">
@@ -126,7 +158,7 @@
             modos en línea mejorados y un modo historia inmersivo llamado World
             Tour.
           </p>
-          <button>+ Info</button> 
+          <button class="cartas-button">+ Info</button> 
         </div>
 
         <div class="carta">
@@ -138,7 +170,7 @@
             icónicos. Además, ofrece un modo en línea mejorado con rollback
             netcode para partidas más fluidas y competitivas.
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
         </div>
           
         <div class="carta">
@@ -151,7 +183,7 @@
             última generación y el modo historia cinematográfico ofrecen una experiencia 
             inmersiva y brutal.
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
         </div>
 
         <div class="carta">
@@ -163,7 +195,7 @@
               inspirado en el anime, el juego es accesible para principiantes y ofrece
               profundidad estratégica para jugadores experimentados. 
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
         </div>
       
         <div class="carta">
@@ -175,7 +207,7 @@
               juego en solitario y en línea, y una narrativa que expande la rica historia del 
               universo Guilty Gear.
           </P>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
           </div>
 
           <div class="carta">
@@ -186,7 +218,7 @@
               estilo visual en 2D y una jugabilidad técnica que atrae a los aficionados. 
               Es conocido por su profundidad estratégica y rica narrativa.
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
           </div>
           
           <div class="carta">
@@ -198,7 +230,7 @@
             variedad de personajes, tanto clásicos como nuevos, y un modo historia cinematográfico 
             que continúa la narrativa épica de la saga.
           </p>
-          <button>+ Info</button>
+          <button class="cartas-button">+ Info</button>
           </div>
 
           <div class="carta">
@@ -209,7 +241,7 @@
               Introduce un sistema de combate en equipos de tres, consolidándose como uno de
               los mejores títulos de la serie.
             </p>
-            <button>+ Info</button>
+            <button class="cartas-button">+ Info</button>
           </div>
 
           <div class="carta">
@@ -221,7 +253,7 @@
               Con su estilo gráfico en 2D y los icónicos Fatalities, se convirtió en un clásico en 
               las salas de arcade y en las consolas.
             </p>
-            <button>+ Info</button>
+            <button class="cartas-button">+ Info</button>
           </div>
 
           <div class="carta">
@@ -233,7 +265,7 @@
               Con un variado elenco de personajes y modos de juego en solitario y en línea, ofrece una 
               experiencia emocionante tanto para principiantes como para veteranos.
             </p>
-            <button>+ Info</button>
+            <button class="cartas-button">+ Info</button>
           </div>
   
           <div class="carta">
@@ -245,7 +277,7 @@
               rol Granblue Fantasy. Introduce nuevas mecánicas de combate, un elenco ampliado de 
               personajes y diversos modos de juego, incluyendo un modo historia y opciones en línea.
             </p>
-            <button>+ Info</button>
+            <button class="cartas-button">+ Info</button>
           </div> 
 
       </div>
@@ -276,12 +308,25 @@
 
   <!-- Foters de la pagina -->
   <footer>
+
+    <div class="div-logos">
+      <ul class="footer-listas">
+        <li class="redes"><a href="https://discord.com/invite/Nv6tkbvwjd" target="_blank" rel="noopener noreferrer"> <i class="bi bi-discord"></i></a></li>
+        <li class="redes"><a href="https://www.twitch.tv/norte_esports1" target="_blank" rel="noopener noreferrer">  <i class="bi bi-twitch"></i></a></li>
+        <li class="redes"><a href="https://x.com/INCA_ONI" target="_blank" rel="noopener noreferrer"> <i class="bi bi-twitter-x"></i> </a></li>
+        <li class="redes"><a href="https://www.youtube.com/@INCACUP" target="_blank" rel="noopener noreferrer">  <i class="bi bi-youtube"></i></a></li>
+        <li class="redes"><a href="https://www.facebook.com/incacupok" target="_blank" rel="noopener noreferrer"> <i class="bi bi-facebook"></i></a></li>
+        <li class="redes"><a href="https://www.instagram.com/inca.cup/" target="_blank" rel="noopener noreferrer">  <i class="bi bi-instagram"></i></a></li>
+      </ul>
+    </div>
+
     <div class="container">
-      <p>&copy; Inscríbete Ya!</p>
+      <p>&copy;Inca Cup 2024. Inscríbete Ya!</p>
     </div>
   </footer>
 
   <!-- codigo js para time -->
+
 
   <script src="./JS/simplyCountdown.min.js">
 
@@ -294,6 +339,9 @@
 
   <!-- Codigo JS para meni Hamburguesa -->
   <script src="./JS/main.js"></script>
+
+  <!-- JS booststrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 

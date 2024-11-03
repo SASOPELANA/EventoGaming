@@ -5,10 +5,12 @@
  */
 
 #cuenta {
+  background-color:  #961aa7;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding: 0.5em 0; /*Ajuste para moviles */
+  padding: 10px; /*Ajuste para moviles */
+  margin: auto;
   flex-wrap: wrap;
 }
 
@@ -16,7 +18,7 @@
   background-color: crimson;
   width: 120px;
   height: 120px;
-  margin: 0 15px 15px;
+  margin: 15px 15px 15px;
   margin-bottom: 25px;
   border-radius: 20%;
   display: flex;
@@ -63,7 +65,7 @@
 /* --- Versión Desktop --- */
 @media (min-width: 720px) {
   #cuenta {
-    background-color: #536878;
+    background-color: #961aa7;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
